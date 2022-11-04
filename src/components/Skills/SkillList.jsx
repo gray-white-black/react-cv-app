@@ -45,9 +45,6 @@ const SkillList = () => {
         ]
     )
 
-    const changeActive = (item) => {
-        setSkillList(...skillList, skillList[item.id].isActive = true)
-    }
 
     return (
         <div className='skillList'>
