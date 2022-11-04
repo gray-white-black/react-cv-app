@@ -1,0 +1,17 @@
+.about .aboutBackground {
+  position: relative;
+  min-width: 100%;
+  min-height: 100vh;
+  background-size: 100% 100%;
+  filter: brightness(0.7);
+  background-image: url("../../assets/images/about.jpg");
+}
+.about .aboutBackgroundFog {
+  background-image: url("../../assets/images/fog2.gif");
+  min-width: 100vh;
+  min-height: 100vh;
+  background-size: cover;
+  opacity: 0.28;
+}
+
+/*# sourceMappingURL=About.css.map */

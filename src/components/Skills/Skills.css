@@ -1,0 +1,38 @@
+.skillsBackground {
+  position: relative;
+  min-width: 100%;
+  min-height: 100vh;
+  background-size: 100% 100%;
+  filter: brightness(0.7);
+  background-image: url("../../assets/images/SkillsBackground.png");
+}
+
+.skillList {
+  display: flex;
+  position: absolute;
+  left: 10.5%;
+  top: 25%;
+}
+
+.skillItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.skillImg {
+  position: relative;
+  width: 9vh;
+  height: 9vh;
+}
+
+.skillBorder {
+  position: absolute;
+  width: 12vh;
+  height: 12vh;
+  background-size: 100% 100%;
+  background-image: url("../../assets/images/SkillBorder.png");
+}
+
+/*# sourceMappingURL=Skills.css.map */

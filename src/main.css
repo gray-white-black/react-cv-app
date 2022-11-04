@@ -1,0 +1,276 @@
+
+.about{
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    background-size: contain;
+    background-size: cover;
+    background-size: 100% 100%;
+    filter: brightness(0.7);
+}
+.lightFr{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 17%;
+    bottom: 15%;
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+    font-size: 12rem;
+    filter: brightness(150%);
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+.lightFrSec{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 26.8%;
+    bottom: 15%;
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+    font-size: 12rem;
+    filter: brightness(150%);
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+@keyframes flicker {
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        text-shadow:
+                0 0 4px #fff,
+                0 0 11px #fff,
+                0 0 19px #fff,
+                0 0 40px #779ac4,
+                0 0 80px #779ac4,
+                0 0 90px #779ac4,
+                0 0 100px #779ac4,
+                0 0 150px #779ac4;
+
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+.person{
+    width: 35px;
+    height: 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: absolute;
+    bottom: 2.2%;
+    background-position: bottom;
+
+}
+.person.breath{
+    animation: breath 1s infinite linear;
+}
+@keyframes breath {
+    0%{
+        transform: translateY(0);
+     }
+    50%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.person.jump {
+    animation: jump .22s;
+}
+@keyframes jump {
+    0%{bottom: 2%;}
+    50%{ bottom: 10%}
+    100%{bottom: 2%}
+}
+.fog{
+
+}
+.npcDad{
+    width: 35px;
+    height: 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: absolute;
+    left: 40%;
+    bottom: 2.2%;
+    background-position: bottom;
+}
+.NpcSpinyHusk{
+    width: 35px;
+    height: 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: absolute;
+    left: 55%;
+    bottom: 2.2%;
+    background-position: bottom;
+    animation: spinyMove 1s infinite;
+}
+@keyframes spinyMove {
+   0%{
+        transform:rotate(0deg);
+    }
+    50%{
+          transform:rotate(-10deg);
+        transform-origin: left;
+      }
+    100%{
+        transform:rotate(0deg);
+       }
+}
+.menu_item{
+    background-image: url("assets/images/menuItem.png");
+    background-size: contain;
+    background-color: rgba(38, 48, 68, 0.38);
+    border-radius: 8px;
+    bottom: 15%;
+    left: 36%;
+    position: absolute;
+    height: 190px;
+    width: 150px;
+    animation: anim .5s;
+}
+.menu_item_sec{
+    background-image: url("assets/images/menuItem.png");
+    background-size: contain;
+    background-color: rgba(38, 48, 68, 0.38);
+    border-radius: 8px;
+    bottom: 15%;
+    left: 51%;
+    position: absolute;
+    height: 190px;
+    width: 150px;
+    animation: anim .5s;
+}
+
+@keyframes anim {
+    0%{
+opacity: 0;
+}
+50%{
+opacity: 0.5;
+}
+100%{
+opacity: 1;
+}
+}
+.press_enter{
+    background-color: rgba(4, 5, 7, 0.91);
+    border-radius: 8px;
+    bottom: 14%;
+    left: 36%;
+    position: absolute;
+    height: 35px;
+    width: 80px;
+}
+.press_enter_sec{
+    background-color: rgba(4, 5, 7, 0.91);
+    border-radius: 8px;
+    bottom: 14%;
+    left: 51%;
+    position: absolute;
+    height: 35px;
+    width: 80px;
+}
+.press_enter p{
+    font-size: 13px;
+    font-family: "Trajan Pro";
+    margin-top: 3%;
+    margin-left: 13%;
+    color: rgba(255, 255, 255, 0.84);
+}
+.press_enter_sec p{
+    font-size: 13px;
+    font-family: "Trajan Pro";
+    margin-top: 8%;
+    margin-left: 29%;
+    color: rgba(255, 255, 255, 0.84);
+}
+.press_enter{
+    animation: heart 1s infinite, opasity .3s;
+
+}
+
+@keyframes heart {
+0%{
+    width: 80px;
+}
+50%{
+    width: 83px;
+    height: 36px;
+
+}
+100%{
+    width: 80px;
+}
+}
+@keyframes opasity {
+    from{
+    opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+.hide{
+    display: none;
+}
+.imgEnter{
+    background-image: url("assets/images/enter.png");
+    filter: invert(100%);
+    height:15px;
+    width: 15px;
+    background-size: contain;
+    position: absolute;
+    bottom: 5%;
+    left: 75%;
+
+}
+.imgEnter_sec{
+    background-image: url("assets/images/enter.png");
+    filter: invert(100%);
+    height:15px;
+    width: 15px;
+    background-size: contain;
+    position: absolute;
+    bottom: 5%;
+    left: 75%;
+
+}
+.menu_item p{
+    text-align: center;
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    top: 22%;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Trajan Pro";
+
+}
+.menu_item_sec p{
+    text-align: center;
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    top: 22%;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Trajan Pro";
+
+}

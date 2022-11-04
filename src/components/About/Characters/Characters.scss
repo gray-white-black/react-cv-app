@@ -1,0 +1,55 @@
+.mainCharacter{
+  width: 35px;
+  height: 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: absolute;
+  bottom: 2.2%;
+  background-position: bottom;
+  z-index: 999;
+}
+.NpcGrandFa{
+  width: 45px;
+  height: 65px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: absolute;
+  bottom: 2.2%;
+  background-position: bottom;
+  background-image: url("../../../assets/images/NpcGrandFa.png");
+  opacity: 0.8;
+}
+.NpcBretta{
+  width: 55px;
+  height: 65px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: absolute;
+  bottom: 2.7%;
+  background-position: bottom;
+  background-image: url("../../../assets/images/NpcBretta.png");
+  opacity: 0.58;
+}
+.NpcMossKnight{
+  width: 70px;
+  height: 90px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: absolute;
+  bottom: 2.7%;
+  background-position: bottom;
+  background-image: url("../../../assets/images/NpcMossKnight.png");
+  opacity: 0.7;
+}
